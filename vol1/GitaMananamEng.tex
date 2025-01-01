@@ -1,0 +1,111 @@
+\documentclass[12pt,twoside,openright,a5paper]{book}
+\input{../packages}
+
+\newfontfamily\engfont[]{Arial}
+\usepackage[hpos=24mm,fontsize=32pt, hanchor=l,anchor=lc,angle=90,color={[gray]{0.5}}, text={\engfont{DRAFT \ COPY}}]{draftwatermark}
+
+\newskip\linepagesep \linepagesep 5pt\relax
+\renewcommand\footrulewidth{0.5pt}
+\def\vfootline{%
+    \begingroup
+        \color{blue}\rule[-990pt]{20pt}{1000pt}
+    \endgroup}
+
+
+
+\setmainfont[Script=Devanagari]{Noto Serif Devanagari}
+\setmainlanguage{sanskrit}
+\setotherlanguages{english}
+%\newfontfamily\kannadafont[Script=Kannada]{Noto Serif Devanagari}
+%\newfontfamily\kannadafontsf[Script=Kannada]{Noto Serif Devanagari}
+%\newfontfamily\devBold[Script=Sanskrit]{Noto Serif Devanagari Bold}
+\newfontfamily\devfont[Script=Devanagari]{Sanskrit 2003}
+\newfontfamily\mananamfont[]{Calligraphic}
+\newfontfamily\mananamtext[]{Monotype Corsiva}
+\newfontfamily\meaningtext[]{Arial Narrow}
+\newfontfamily\selfReflect[]{Arial Rounded MT Bold}
+\newfontfamily\devanagarifont[]{Noto Serif Devanagari}
+%\newfontfamily\akayaKan[Script=Kannada]{Akaya Kanadaka}
+\newfontfamily\devanagarifontsf{Noto Serif Devanagari}
+\newfontfamily\devanagarifonttt{Sanskrit 2003}
+\fancyhf{}
+  \fancyfoot[RO]{\vfootline\hskip\linepagesep\thepage}
+  \fancyfoot[LE]{\thepage\hskip\linepagesep\vfootline}
+  \fancyhead[RO]{\footnotesize \devfont दिनाङ्क ..../..../.....}
+  \fancyhead[LO]{\footnotesize \devfont गीतामननम्}
+  \fancyhead[LE]{\footnotesize \devfont गीतामननम्}
+  \fancyhead[RE]{\footnotesize \devfont दिनाङ्क ..../..../.....}
+  \renewcommand\headrulewidth{1pt}
+  \fancypagestyle{plain}{%
+    \fancyhf{}
+    \fancyfoot[RO]{\vfootline\hskip\linepagesep\thepage}
+    \fancyfoot[LE]{\thepage\hskip\linepagesep\vfootline}
+    \renewcommand\headrulewidth{0pt}
+  }
+\quotingsetup{font={itshape,footnotesize}}
+
+
+\addto\captionskannada{\renewcommand{\contentsname}{\color{blue}{विशयसूचि}}} 
+
+% Reduce space between TOC
+\setlength\cftparskip{-2pt}
+\setlength\cftbeforechapskip{2pt}
+\setcounter{secnumdepth}{-1}
+\chapterfont{\color{blue}}  % sets colour of chapters
+\setlength\parindent{0pt} % no-indent for entire file
+\date{} % clear date
+\makeindex
+\indexsetup{othercode=\small}
+%\include{./glossaries-kan}
+%\makeglossaries
+
+\input{../box-def.tex}
+% commands
+\definecolor{aurometalsaurus}{rgb}{0.43, 0.5, 0.5}
+\newcommand{\slcol}[1]{{\large\color{Blue}{#1}}}
+\newcommand{\cquote}[1]{\begin{quoting}[vskip=5pt]{\color{black}{\meaningtext #1}}\end{quoting}}
+%\input{./index-page}
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+%column decoration
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{blue}}
+
+\begin{document}
+
+\pagenumbering{roman}
+\input{./frontcover}
+\input{./titlepage}
+%\maketitle
+
+\input{./copyright}
+\thispagestyle{empty}
+\frontmatter
+
+\doublespacing
+\tableofcontents
+\singlespacing
+\input{./ganapa}
+\thispagestyle{empty}
+\thispagestyle{empty}
+\pagestyle{fancy}
+
+
+\chapter{Preface}
+\input{../preface}
+%\thispagestyle{empty}
+\begin{onehalfspace}
+\chapter{Introduction}
+\input{../introduction}
+\end{onehalfspace}
+\mainmatter
+
+\chapter{\devfont १ अर्जुन विशादयोग}
+\input{../chapters/chap1}
+\pagenumbering{arabic}
+%\renewcommand* \thepage {\localnumeral*{page}} %Page numbers in Kannada
+%\input{./chapters/chap1}
+\makeatletter\@openrightfalse
+\printindex
+\input{./backcover.tex}
+\end{document}
