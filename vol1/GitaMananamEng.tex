@@ -20,7 +20,7 @@
 %\newfontfamily\kannadafontsf[Script=Kannada]{Noto Serif Devanagari}
 %\newfontfamily\devBold[Script=Sanskrit]{Noto Serif Devanagari Bold}
 \newfontfamily\devfont[Script=Devanagari]{Sanskrit 2003}
-\newfontfamily\mananamfont[]{Calligraphic}
+\newfontfamily\mananamfont[]{Arial Rounded MT Bold}
 \newfontfamily\mananamtext[]{Monotype Corsiva}
 \newfontfamily\meaningtext[]{Arial Narrow}
 \newfontfamily\arialUC[]{Arial Unicode MS}
@@ -32,10 +32,10 @@
 \fancyhf{}
   \fancyfoot[RO]{\vfootline\hskip\linepagesep\thepage}
   \fancyfoot[LE]{\thepage\hskip\linepagesep\vfootline}
-  \fancyhead[RO]{\footnotesize \devfont दिनाङ्क ..../..../.....}
-  \fancyhead[LO]{\footnotesize \devfont गीतामननम्}
-  \fancyhead[LE]{\footnotesize \devfont गीतामननम्}
-  \fancyhead[RE]{\footnotesize \devfont दिनाङ्क ..../..../.....}
+  \fancyhead[RO]{\footnotesize \devfont गीतामननम्} %Odd page Right
+  \fancyhead[LO]{\footnotesize \devfont दिनाङ्क ..../..../.....} % Odd page Left
+  \fancyhead[LE]{\footnotesize \devfont गीतामननम्} %Even page Left
+  \fancyhead[RE]{\footnotesize \devfont दिनाङ्क ..../..../.....} %Even page Right
   \renewcommand\headrulewidth{1pt}
   \fancypagestyle{plain}{%
     \fancyhf{}
@@ -101,10 +101,12 @@
 \input{../introduction}
 \end{onehalfspace}
 \mainmatter
-
+\pagenumbering{arabic}
 \chapter{\devfont १ अर्जुन विशादयोग}
 \input{../chapters/chap1}
-\pagenumbering{arabic}
+\chapter{\devfont २ साङ्ख्ययोग}
+\input{../chapters/chap2}
+
 %\renewcommand* \thepage {\localnumeral*{page}} %Page numbers in Kannada
 %\input{./chapters/chap1}
 \makeatletter\@openrightfalse
