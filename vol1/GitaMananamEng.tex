@@ -1,7 +1,7 @@
 \documentclass[12pt,twoside,openright,a5paper]{book}
 \input{../packages}
+\input{../font-spec}
 
-\newfontfamily\engfont[]{Arial}
 \usepackage[hpos=24mm,fontsize=32pt, hanchor=l,anchor=lc,angle=90,color={[gray]{0.5}}, text={\engfont{DRAFT \ COPY}}]{draftwatermark}
 
 \newskip\linepagesep \linepagesep 5pt\relax
@@ -11,24 +11,6 @@
         \color{blue}\rule[-990pt]{20pt}{1000pt}
     \endgroup}
 
-
-
-\setmainfont[Script=Devanagari]{Noto Serif Devanagari}
-\setmainlanguage{sanskrit}
-\setotherlanguages{english}
-%\newfontfamily\kannadafont[Script=Kannada]{Noto Serif Devanagari}
-%\newfontfamily\kannadafontsf[Script=Kannada]{Noto Serif Devanagari}
-%\newfontfamily\devBold[Script=Sanskrit]{Noto Serif Devanagari Bold}
-\newfontfamily\devfont[Script=Devanagari]{Sanskrit 2003}
-\newfontfamily\mananamfont[]{Arial Rounded MT Bold}
-\newfontfamily\mananamtext[]{Monotype Corsiva}
-\newfontfamily\meaningtext[]{Arial Narrow}
-\newfontfamily\arialUC[]{Arial Unicode MS}
-\newfontfamily\selfReflect[]{Arial Rounded MT Bold}
-\newfontfamily\devanagarifont[]{Noto Serif Devanagari}
-%\newfontfamily\akayaKan[Script=Kannada]{Akaya Kanadaka}
-\newfontfamily\devanagarifontsf{Noto Serif Devanagari}
-\newfontfamily\devanagarifonttt{Sanskrit 2003}
 \fancyhf{}
   \fancyfoot[RO]{\vfootline\hskip\linepagesep\thepage}
   \fancyfoot[LE]{\thepage\hskip\linepagesep\vfootline}
@@ -64,8 +46,9 @@
 % commands
 \definecolor{aurometalsaurus}{rgb}{0.43, 0.5, 0.5}
 \newcommand{\slcol}[1]{{\large\color{Blue}{#1}}}
-\newcommand{\cquote}[1]{\begin{quoting}[vskip=5pt]{\color{black}{\meaningtext #1}}\end{quoting}}
+\newcommand{\cquote}[1]{\begin{quoting}[vskip=5pt]{\color{black}{\normalfont\mananamtext #1}}\end{quoting}}
 \newcommand{\translate}[1]{\begin{quoting}[vskip=3pt]{\color{blue}{\arialUC #1}}\end{quoting}}
+\newcommand{\mananamtext}[1]{\normalfont\mfontCalibri #1}
 %\input{./index-page}
 \renewcommand{\cftchapfont}{\normalfont}
 \renewcommand{\cftchappagefont}{\normalfont}
@@ -74,7 +57,7 @@
 \def\columnseprulecolor{\color{blue}}
 
 \begin{document}
-
+\sloppy
 \pagenumbering{roman}
 \input{./frontcover}
 \input{./titlepage}
@@ -102,14 +85,21 @@
 \end{onehalfspace}
 \mainmatter
 \pagenumbering{arabic}
+%\input{../everypage}
 \chapter{\devfont १ अर्जुन विशादयोग}
 \input{../chapters/chap1}
 \chapter{\devfont २ साङ्ख्ययोग}
 \input{../chapters/chap2}
-
+\chapter{\devfont ३ कर्मयोग}
+\input{../chapters/chap3}
+\chapter{\devfont ४ ज्ञानकर्मस्न्यासयोग}
+\input{../chapters/chap4}
 %\renewcommand* \thepage {\localnumeral*{page}} %Page numbers in Kannada
 %\input{./chapters/chap1}
 \makeatletter\@openrightfalse
-\printindex
-\input{./backcover.tex}
+\begin{onehalfspace}
+  \printindex
+\end{onehalfspace}
+
+\input{./backcover}
 \end{document}
