@@ -1,0 +1,92 @@
+
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" 
+"http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"> 
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">                 <head> 
+<meta name="dtb:uid" content="http://example.com/GitaMananamEng"/> 
+<meta name="dtb:depth" content="3"/> 
+<meta name="dtb:totalPageCount" content="0"/> 
+<meta name="dtb:maxPageNumber" content="0"/> 
+</head> 
+<docTitle> 
+<text>Unnamed</text> 
+</docTitle> 
+<navMap> 
+<navPoint id="navPoint-1" playOrder="1"> 
+<navLabel> 
+<text><navmark type="likechapter"></navmark>  Contents</text> 
+</navLabel> 
+<content src="GitaMananamEngli1.html#x2-1000" /></navPoint> 
+ 
+<navPoint id="navPoint-2" playOrder="2"> 
+<navLabel> 
+<text><navmark type="chapter"></navmark>  Preface</text> 
+</navLabel> 
+<content src="GitaMananamEngch1.html#x3-2000" /></navPoint> 
+ 
+<navPoint id="navPoint-3" playOrder="3"> 
+<navLabel> 
+<text><navmark type="chapter"></navmark>  Introduction</text> 
+</navLabel> 
+<content src="GitaMananamEngch2.html#x4-3000" /></navPoint> 
+ 
+<navPoint id="navPoint-4" playOrder="4"> 
+<navLabel> 
+<text><navmark type="chapter"></navmark>
+How to use the Book</text> 
+</navLabel> 
+<content src="GitaMananamEngch3.html#x5-4000" /></navPoint> 
+ 
+<navPoint id="navPoint-5" playOrder="5"> 
+<navLabel> 
+<text><navmark type="chapter"></navmark>   Chapter 1 Arjuna Viṣāda Yoga</text> 
+</navLabel> 
+<content src="GitaMananamEngch4.html#x6-50000" /></navPoint> 
+ 
+<navPoint id="navPoint-6" playOrder="6"> 
+<navLabel> 
+<text><navmark type="chapter"></navmark>   Chapter
+2 Sāṅkhya Yoga</text> 
+</navLabel> 
+<content src="GitaMananamEngch5.html#x7-60000" /></navPoint> 
+ 
+<navPoint id="navPoint-7" playOrder="7"> 
+<navLabel> 
+<text><navmark type="chapter"></navmark>   Chapter 3 Karma Yoga</text> 
+</navLabel> 
+<content src="GitaMananamEngch6.html#x8-70000" /></navPoint> 
+ 
+<navPoint id="navPoint-8" playOrder="8"> 
+<navLabel> 
+<text><navmark type="chapter"></navmark>   Chapter 4 Jñāna
+Karma Sanyāsa Yoga</text> 
+</navLabel> 
+<content src="GitaMananamEngch7.html#x9-80000" /></navPoint> 
+ 
+<navPoint id="navPoint-9" playOrder="9"> 
+<navLabel> 
+<text><navmark type="chapter"></navmark>   Chapter 5 Karma Sanyāsa Yoga</text> 
+</navLabel> 
+<content src="GitaMananamEngch8.html#x10-90000" /></navPoint> 
+ 
+<navPoint id="navPoint-10" playOrder="10"> 
+<navLabel> 
+<text><navmark type="chapter"></navmark>
+Chapter 6 Ātma Samyama Yoga</text> 
+</navLabel> 
+<content src="GitaMananamEngch9.html#x11-100000" /></navPoint> 
+ 
+<navPoint id="navPoint-11" playOrder="11"> 
+<navLabel> 
+<text><navmark type="chapter"></navmark>   IAST Sanskrit</text> 
+</navLabel> 
+<content src="GitaMananamEngch10.html#x12-110000" /></navPoint> 
+ 
+<navPoint id="navPoint-12" playOrder="12"> 
+<navLabel> 
+<text><navmark type="likechapter"></navmark>   Index</text> 
+</navLabel> 
+<content src="GitaMananamEngli2.html#x13-12000" />
+</navPoint> 
+</navMap>
+</ncx>

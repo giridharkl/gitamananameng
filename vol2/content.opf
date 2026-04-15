@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="dcidid" version="2.0"> 
+<metadata 
+xmlns:dc="http://purl.org/dc/elements/1.1/" 
+xmlns:opf="http://www.idpf.org/2007/opf"> 
+<dc:title>Unnamed</dc:title> 
+<dc:language>en</dc:language> 
+<dc:identifier id="dcidid"  opf:scheme="URI">http://example.com/GitaMananamEng</dc:identifier> 
+<dc:creator>Anonymous</dc:creator> 
+<dc:date>2025-12-20T19:25:00Z</dc:date></metadata>   
+<manifest> 
+<item id="ncx" href="GitaMananamEng.ncx" media-type="application/x-dtbncx+xml" /> 
+<item id="stylesheet" href="GitaMananamEng.css" media-type="text/css"/> 
+<item id="file1"  href="GitaMananamEng.html" media-type="application/xhtml+xml" /> 
+<item id="file2"  href="GitaMananamEngli1.html" media-type="application/xhtml+xml" /> 
+<item id="file3"  href="GitaMananamEngch1.html" media-type="application/xhtml+xml" /> 
+<item id="file4"  href="GitaMananamEngch2.html" media-type="application/xhtml+xml" /> 
+<item id="file5"  href="GitaMananamEngch3.html" media-type="application/xhtml+xml" /> 
+<item id="file6"  href="GitaMananamEngch4.html" media-type="application/xhtml+xml" /> 
+<item id="file7"  href="GitaMananamEngch5.html" media-type="application/xhtml+xml" /> 
+<item id="file8"  href="GitaMananamEngch6.html" media-type="application/xhtml+xml" /> 
+<item id="file9"  href="GitaMananamEngch7.html" media-type="application/xhtml+xml" /> 
+<item id="file10"  href="GitaMananamEngch8.html" media-type="application/xhtml+xml" /> 
+<item id="file11"  href="GitaMananamEngch9.html" media-type="application/xhtml+xml" /> 
+<item id="file12"  href="GitaMananamEngch10.html" media-type="application/xhtml+xml" /> 
+<item id="file13"  href="GitaMananamEngli2.html" media-type="application/xhtml+xml" /> 
+ 
+<item id='GitaMananamEng-1_svg' href='GitaMananamEng-1.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-2_svg' href='GitaMananamEng-2.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-3_svg' href='GitaMananamEng-3.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-4_svg' href='GitaMananamEng-4.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-5_svg' href='GitaMananamEng-5.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-6_svg' href='GitaMananamEng-6.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-7_svg' href='GitaMananamEng-7.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-8_svg' href='GitaMananamEng-8.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-9_svg' href='GitaMananamEng-9.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-10_svg' href='GitaMananamEng-10.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-11_svg' href='GitaMananamEng-11.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-12_svg' href='GitaMananamEng-12.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-13_svg' href='GitaMananamEng-13.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-14_svg' href='GitaMananamEng-14.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-15_svg' href='GitaMananamEng-15.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng-16_svg' href='GitaMananamEng-16.svg' media-type='image/svg+xml' />
+<item id='GitaMananamEng0x_png' href='GitaMananamEng0x.png' media-type='image/png' />
+<item id='GitaMananamEng1x_png' href='GitaMananamEng1x.png' media-type='image/png' />
+</manifest> 
+   
+<spine toc="ncx"> 
+<itemref idref="file1" /> 
+<itemref idref="file2" /> 
+<itemref idref="file3" /> 
+<itemref idref="file4" /> 
+<itemref idref="file5" /> 
+<itemref idref="file6" /> 
+<itemref idref="file7" /> 
+<itemref idref="file8" /> 
+<itemref idref="file9" /> 
+<itemref idref="file10" /> 
+<itemref idref="file11" /> 
+<itemref idref="file12" /> 
+<itemref idref="file13" /> 
+  
+ 
+</spine> 
+</package>
