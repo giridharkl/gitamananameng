@@ -5,11 +5,11 @@
   }%
 }
 
-\newtcolorbox{inspiration}[2][]{%
+\newtcolorbox{inspiration}[2][fontlower=\small]{%
   floatplacement=!b,float, 
-  enhanced,colback=white,colframe=purple,coltitle=black,
+  enhanced,colback=white,colframe=\inspBdrBoxColor,coltitle=black,
   sharp corners,boxrule=1pt, width=\textwidth,
-  fonttitle=\sffamily\scshape\color{teal},
+  fonttitle=\sffamily\scshape\color{black},
   rightrule=3mm,
   fontupper=\itshape,
   fontlower=\tiny,
@@ -19,9 +19,9 @@
   title=#2,#1
 }
 \newtcolorbox{mananam}[2][fontlower=\small]{%
-  enhanced,colback=white,colframe=teal,coltitle=black,
+  enhanced,colback=white,colframe=\manBdrBoxColor,coltitle=black,
   sharp corners,boxrule=1pt, width=\textwidth,
-  fonttitle=\sffamily\scshape\color{purple},
+  fonttitle=\sffamily\scshape\color{black},
   leftrule=3mm,
   fontupper=\itshape,
   fontlower=\tiny,
@@ -31,5 +31,6 @@
   title=#2,#1
 }
 
+\newcommand{\sreflect}{\WritingHand\enspace{\selfReflect\small{Self Reflection}}}
 %\newcommand\Index[1]{#1\index{#1}}
 
