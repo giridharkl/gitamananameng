@@ -17,15 +17,20 @@
 %\end{figure}
 %\restoregeometry % Restore original geometry settings
 %\newpage
-
+\newgeometry{top=8mm, bottom=5mm, left=10mm, right=10mm}
+\thispagestyle{empty}
 \begin{figure}[h!]
     \centering
-    \begin{overpic}[width=\paperwidth, height=\paperheight]{../images/001.jpg}
-        \put(17,85){\color{white}\devfont गजाननं भूतगणादि सेवितं कपित्थजम्बूफलसार भक्षितम् ।
+    \begin{overpic}[width=0.8\paperwidth, height=0.9\paperheight]{../images/001.jpg}
+        \put(8, 92){\color{white}\devfont गजाननं भूतगणादि सेवितं कपित्थजम्बूफलसार भक्षितम् ।
         }
-        \put(17,82){\color{white}\devfont उमासुतं शोकविनाशकारणं नमामि विघ्नेश्वर पादपङ्कजम् ॥}
-    \end{overpic}
-    \caption{This is the standard figure caption below the image.}
+        \put(8, 89){\color{white}\devfont उमासुतं शोकविनाशकारणं नमामि विघ्नेश्वर पादपङ्कजम् ॥}
+        \put(12, 86){\color{white}\notosansdev\footnotesize gajānanaṁ bhūta-gaṇādi-sevitaṁ}
+        \put(14, 84){\color{white}\notosansdev\footnotesize kapittha-jambū-phala-sāra bhakṣitam |}
+        \put(12, 82){\color{white}\notosansdev\footnotesize umā-sutaṁ śoka-vināśa-kāraṇaṁ}
+        \put(14, 80){\color{white}\notosansdev\footnotesize namāmi vighneśvara pāda-paṅkajam ‖}
+      \end{overpic}
+    %\caption{This is the standard figure caption below the image.}
     \label{fig:example}
 \end{figure}
 

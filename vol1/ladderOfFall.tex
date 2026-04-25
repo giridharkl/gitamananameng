@@ -11,7 +11,7 @@ minimum height=1cm,
 text centered, 
 draw=black,
 align=center,
-fill=red!30]
+fill=white!30]
 
 \tikzstyle{io} = [trapezium, 
 trapezium stretches=true, % A later addition
@@ -19,7 +19,7 @@ trapezium left angle=70,
 trapezium right angle=110, 
 minimum width=3cm, 
 minimum height=1cm, text centered, 
-draw=black, fill=blue!30]
+draw=black, fill=white!30]
 
 \tikzstyle{process} = [rectangle, 
 minimum width=4cm, 
@@ -27,7 +27,7 @@ minimum height=1cm,
 text centered, 
 text width=4cm, 
 draw=black, 
-fill=orange!30]
+fill=white!30]
 
 \tikzstyle{etbox} = [rectangle, 
 minimum width=4cm, 
@@ -54,14 +54,14 @@ fill=green!30]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \begin{center}
 \begin{tikzpicture}[node distance=2cm]
-\node (start) [startstop] {Brooding over sense objects}; \node(l1)[lbox, left of =start,xshift=-2.0cm]{States of Mind};\node(r1)[lbox, right of =start,xshift=2.0cm]{\devfont ध्यायतो विशयान्पुम्सः};
+\node (start) [startstop] {Brooding over sense objects}; \node(l1)[lbox, left of =start,xshift=-2.0cm]{States of mind};\node(r1)[lbox, right of =start,xshift=2.0cm]{\devfont ध्यायतो विशयान्पुम्सः};
 \node(pro1) [process, below of =start] {Attachment arises to them}; \node(l2)[lbox,left of =pro1,xshift=-2.0cm]{Absorbed by senses and mind};\node(r2)[lbox, right of =pro1,xshift=2.0cm]{\devfont सङ्गस्तेषूपजायते};
-\node(pro2) [process, below of =pro1] {From Attachment arises desire}; \node(l3)[lbox, left of =pro2,xshift=-2.0cm]{Obsessed by Passion};\node(r3)[lbox, right of =pro2,xshift=2.0cm]{\devfont सङ्गात्सञ्जायते कामः};
-\node(pro3) [process, below of =pro2] {From obstructed desires comes Anger}; \node(l4)[lbox, left of =pro3,xshift=-2.0cm]{Control is harder from this Level};\node(r3)[lbox, right of =pro3,xshift=2.0cm]{\devfont कामात्क्रोधोऽभिजायते};
-\node(pro4) [process, below of =pro3] {From Anger comes delusion}; \node(l5)[lbox, left of =pro4,xshift=-2.0cm]{Fall is Faster};\node(r4)[lbox, right of =pro4,xshift=2.0cm]{\devfont क्रोधाद्भवति संमोहः};
-\node(pro5) [process, below of =pro4] {From delusion comes Forgetfulness}; \node(l6)[lbox, left of =pro5,xshift=-2.0cm]{Greater effort required to save oneself};\node(r5)[lbox, right of =pro5,xshift=2.0cm]{\devfont संमोहात्स्मृतिविभ्रमः};
+\node(pro2) [process, below of =pro1] {From attachment arises desire}; \node(l3)[lbox, left of =pro2,xshift=-2.0cm]{Obsessed by passion};\node(r3)[lbox, right of =pro2,xshift=2.0cm]{\devfont सङ्गात्सञ्जायते कामः};
+\node(pro3) [process, below of =pro2] {From obstructed desires comes anger}; \node(l4)[lbox, left of =pro3,xshift=-2.0cm]{Control is harder from this level};\node(r3)[lbox, right of =pro3,xshift=2.0cm]{\devfont कामात्क्रोधोऽभिजायते};
+\node(pro4) [process, below of =pro3] {From anger comes delusion}; \node(l5)[lbox, left of =pro4,xshift=-2.0cm]{Fall is faster};\node(r4)[lbox, right of =pro4,xshift=2.0cm]{\devfont क्रोधाद्भवति संमोहः};
+\node(pro5) [process, below of =pro4] {From delusion comes forgetfulness}; \node(l6)[lbox, left of =pro5,xshift=-2.0cm]{Greater effort required to save oneself};\node(r5)[lbox, right of =pro5,xshift=2.0cm]{\devfont संमोहात्स्मृतिविभ्रमः};
 \node(pro6) [process, below of =pro5] {Forgetfulness results in loss of wisdom};\node(r6)[lbox, right of =pro6,xshift=2.0cm]{\devfont स्मृतिभ्रंशाद्बुद्धिनाशः};
-\node (stop) [startstop, below of=pro6] {Loss of wisdom leads to \\Self destruction};\node(r1)[lbox, right of =stop,xshift=2.0cm]{\devfont बुद्धिनाशात्प्रणश्यति};
+\node (stop) [startstop, below of=pro6] {Loss of wisdom leads to \\self destruction};\node(r1)[lbox, right of =stop,xshift=2.0cm]{\devfont बुद्धिनाशात्प्रणश्यति};
 
 \draw [arrow] (start) -- (pro1);
 \draw [arrow] (pro1) -- (pro2);

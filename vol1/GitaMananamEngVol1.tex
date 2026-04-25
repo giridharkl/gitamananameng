@@ -1,0 +1,117 @@
+\documentclass[12pt,twoside,openany]{book}
+\input{../packages}
+\input{../font-spec}
+\input{../box-def}
+\input{../new-cmd}
+\input{../color-def}
+\usepackage[paperwidth=140mm, paperheight=215.90mm,
+            top=20mm, bottom=20mm,
+            inner=15mm, outer=15mm]{geometry}
+
+%\usepackage[hpos=24mm,fontsize=32pt, hanchor=l,anchor=lc,angle=90,color={[gray]{0.5}}, text={\engfont{DRAFT \ COPY}}]{draftwatermark}
+
+\newskip\linepagesep \linepagesep 5pt\relax
+\renewcommand\footrulewidth{0.5pt}
+\def\vfootline{%
+    \begingroup
+        \color{black}\rule[-990pt]{20pt}{1000pt}
+    \endgroup}
+
+\fancyhf{}
+  \fancyfoot[RO]{\hskip\linepagesep\thepage}
+  \fancyfoot[LE]{\thepage\hskip\linepagesep}
+  \renewcommand\headrulewidth{1pt}
+  \fancypagestyle{plain}{%
+    \fancyhf{}
+    \fancyfoot[RO]{\hskip\linepagesep\thepage}
+    \fancyfoot[LE]{\thepage\hskip\linepagesep}
+    \renewcommand\headrulewidth{0pt}
+  }
+\quotingsetup{font={itshape,footnotesize}}
+
+
+%\addto\captionskannada{\renewcommand{\contentsname}{\color{blue}{विशयसूचि}}} 
+
+% Reduce space between TOC
+\setlength\cftparskip{-2pt}
+\setlength\cftbeforechapskip{2pt}
+\setcounter{secnumdepth}{-1}
+\chapterfont{\chapColor}  % sets colour of chapters
+\setlength\parindent{0pt} % no-indent for entire file
+\date{} % clear date
+\makeindex
+\indexsetup{othercode=\small}
+%\include{./glossaries-kan}
+%\makeglossaries
+
+% commands
+\definecolor{aurometalsaurus}{rgb}{0.43, 0.5, 0.5}
+\newcommand{\slcol}[1]{\parbox{10.9cm}{\large\devfont\slokaColor{#1}}}
+\newcommand{\cquote}[1]{\parbox{10.9cm}{\begin{quoting}[vskip=5pt]{\color{black}{\normalfont\meaningtext {#1}}}\end{quoting}}}
+\newcommand{\translate}[1]{\parbox{10.9cm}{\begin{quoting}[vskip=3pt]{\translitColor\footnotesize\normalfont\notosansdev\linespread{2.5} {#1}}\end{quoting}}}
+\newcommand{\mananamtext}[1]{\NoAutoSpacing\mfontCalibri\small\normalfont #1}
+%\input{./index-page}
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+\addto\captionsenglish{\renewcommand{\contentsname}{\contentTitleColor{Contents}}} 
+%column decoration
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{black}}
+\newcommand{\nospace}[1]{\nofrench@punctuation{#1}\french@punctuation}
+\frenchspacing
+\begin{document}
+\sloppy
+\pagenumbering{roman}
+%\input{./frontcover}
+\input{./titlepage}
+%\maketitle
+
+\input{./copyright}
+\thispagestyle{empty}
+\frontmatter
+\doublespacing
+\tableofcontents
+\singlespacing
+\input{./ganapa}
+\thispagestyle{empty}
+\thispagestyle{empty}
+\pagestyle{fancy}
+%\layout
+
+\NChapter{\arialUC Preface}
+\input{../preface}
+%\thispagestyle{empty}
+\NChapter{\arialUC Introduction}
+%\begin{onehalfspace}
+\input{../introduction}
+%\end{onehalfspace}
+\NChapter{\arialUC How to use the Book}
+\input{./Howtouse}
+\mainmatter
+\pagenumbering{arabic}
+%\input{../everypage}
+\Chapter{\arialUC Chapter 1}{\arialUC Arjuna Viṣāda Yoga}{\arialUC Yoga of Arjuna's Despondency}
+\input{./chapters/chap1}
+\Chapter{\arialUC Chapter 2}{\arialUC Sāṅkhya Yoga}{\arialUC Yoga of Knowledge}
+\input{./chapters/chap2}
+\Chapter{\arialUC Chapter 3}{\arialUC Karma Yoga}{\arialUC Yoga of Action}
+\input{./chapters/chap3}
+\Chapter{\arialUC Chapter 4}{\arialUC Jñāna Karma Sanyāsa Yoga}{\arialUC Yoga of Renunciation of Action in Knowledge}
+\input{./chapters/chap4}
+\Chapter{\arialUC Chapter 5}{\arialUC Karma Sanyāsa Yoga}{\arialUC Yoga of complete Renunciation of Action}
+\input{./chapters/chap5}
+\Chapter{\arialUC Chapter 6}{\arialUC Ātma Samyama Yoga}{\arialUC Yoga of Self Control and Meditation}
+\input{./chapters/chap6}
+%\renewcommand* \thepage {\localnumeral*{page}} %Page numbers in Kannada
+\makeatletter\@openrightfalse
+\NChapter{\arialUC IAST Sanskrit}
+\input{../sanskrit-iata}
+
+\begin{onehalfspace}
+  \NHeader{\arialUC Index}
+  \printindex
+  \chapEnd
+\end{onehalfspace}
+\input{./back-inner}
+%\input{./backcover}
+\end{document}
