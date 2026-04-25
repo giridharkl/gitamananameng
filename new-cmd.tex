@@ -3,12 +3,30 @@
 \newcommand\Chapter[3]{
   \chapter[#1 #2]{#1\\\Large{#2\\ {\vspace{-5mm}\normalsize(#3)}}}
   \vspace{-10mm}
-  \newpgfornamentfamily{vectorian}
+  \newpgfornamentfamily{vectorian} %design
   \begin{center}
     
-    \pgfornament[anchor=center,ydelta=0pt,width=5cm, color=purple]{84}
+    \pgfornament[anchor=center,ydelta=0pt,width=5cm, color=\chapBeginSymColor]{84}
   \end{center}
   %print different header for each chapter
+  \fancyhead[RO]{\footnotesize \arialUC Gita Mananam} %Odd page Right
+  \fancyhead[LO]{\footnotesize #1} % Odd page Left
+  \fancyhead[LE]{\footnotesize \arialUC Gita Mananam} %Even page Left
+  \fancyhead[RE]{\footnotesize #1} %Even page Right
+}
+
+\newcommand\NChapter[1]{
+  \chapter[#1]{#1}
+  %print different header for each chapter
+  \fancyhead[RO]{\footnotesize \arialUC Gita Mananam} %Odd page Right
+  \fancyhead[LO]{\footnotesize \arialUC#1} % Odd page Left
+  \fancyhead[LE]{\footnotesize \arialUC Gita Mananam} %Even page Left
+  \fancyhead[RE]{\footnotesize \arialUC #1} %Even page Right
+}
+
+\newcommand\NHeader[1]{
+  %print different header for each chapter
+  \fancyhf{}
   \fancyhead[RO]{\footnotesize \arialUC Gita Mananam} %Odd page Right
   \fancyhead[LO]{\footnotesize #1} % Odd page Left
   \fancyhead[LE]{\footnotesize \arialUC Gita Mananam} %Even page Left
@@ -18,8 +36,14 @@
 \newcommand\chapEnd{
   \begin{center}
     \newpgfornamentfamily{vectorian}
-    \pgfornament[anchor=center,ydelta=0pt,width=5cm, color=purple]{85}  
+    \pgfornament[anchor=center,ydelta=0pt,width=5cm, color=\chapEndSymColor]{85}  
   \end{center}
+}
+
+\newcommand\chapEndSlokaTranslate[1]{
+  \vspace{0.3cm}
+  \notosansdev\small\color{black}{#1}
+  \chapEnd
 }
 %
 %\addto\captionskannada{\renewcommand{\contentsname}{\color{blue}{ವಿಷಯ ಸೂಚಿ}}}
@@ -34,5 +58,6 @@
 %\newcommand{\chapindexpage}{\thechapter-\arabic{page}}
 %\renewcommand{\thepage}{\chapindexpage}
 %\newcommand{\chapIndex}{\thechapter-\thepage}
-\newcommand\Index[1]{#1\index{#1}}
+\newcommand\Index[1]{\devfont #1\index{\devfont #1}}
 %\newcommand{\Index}[1]{#1\index{#1|chapIndex}}
+\newcommand\inspirationTitleFont[1]{\mananamfont\normalfont\textbf{#1}}
